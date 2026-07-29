@@ -1,0 +1,34 @@
+.about {
+  position: relative;
+  background-color: #fdf2df;
+  padding-top: 4px;
+}
+
+.about-wave-wrap {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  height: 55px;
+  overflow: visible;
+}
+
+.about-wave {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media screen and (min-width: 1440px) {
+  .about-wave-wrap {
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  .about-wave {
+    transform: scaleY(1.8);
+    transform-origin: bottom;
+  }
+}

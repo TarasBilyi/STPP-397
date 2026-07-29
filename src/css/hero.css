@@ -1,0 +1,119 @@
+.hero {
+  position: relative;
+  background-image: url('../img/hero/hero-bg-mob.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 22px;
+  padding-bottom: 50px;
+  margin: 80px auto 0;
+  max-width: 400px;
+}
+
+@media screen and (min-width: 320px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('../img/hero/hero-bg-mob@2x.jpg');
+    background-size: cover;
+    max-width: 400px;
+  }
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.hero-title {
+  font-family: 'DM Serif Display', sans-serif;
+  max-width: 180px;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.hero-title-brown {
+  background: radial-gradient(circle at center, #321c06 0%, #814309 100%);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.hero-title-green {
+  background: radial-gradient(
+    circle at center,
+    #071f03 0%,
+    #1e6111 53%,
+    #0f3a07 87%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.hero-text {
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #000;
+  width: 222px;
+}
+
+.desc-btn-market {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    position: relative;
+    background-image: url('../img/hero/hero-bg-desc.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 273px;
+    padding-bottom: 180px;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  .hero-wrapper {
+    gap: 19px;
+  }
+
+  .hero-title {
+    max-width: 470px;
+    font-size: 64px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .hero-text {
+    font-size: 20px;
+    line-height: 1.35;
+    color: #6c6658;
+    width: 296px;
+  }
+
+  .mobile-btn-market {
+    display: none;
+  }
+
+  .desc-btn-market {
+    display: flex;
+    padding: 15px 35px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('../img/hero/hero-bg-desc@2x.jpg');
+    background-size: cover;
+    max-width: 1440px;
+  }
+}
