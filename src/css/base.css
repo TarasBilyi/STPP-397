@@ -1,12 +1,6 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 47px;
-}
-
-@media only screen and (min-width: 1440px) {
-  html {
-    scroll-padding-top: 120px;
-  }
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -35,7 +29,7 @@ main:has(.back-link) {
 }
 
 .btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
   font-size: 20px;
@@ -55,6 +49,11 @@ main:has(.back-link) {
   border: 1px solid rgba(122, 184, 93, 0.45);
   border-radius: 20px;
   padding: 13px 15px;
+}
+
+.mobile-btn-market {
+  font-size: 12px;
+  padding: 5px 17px;
 }
 
 @media only screen and (min-width: 1440px) {
