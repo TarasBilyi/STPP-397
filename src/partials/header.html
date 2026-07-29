@@ -1,5 +1,102 @@
-<header class="header">
+<header class="header" data-header-scroll="off">
   <div class="container">
-    
+    <div class="wrapper">
+      <a href="index.html">
+        <img
+          class="header-logo"
+          src="img/logo-header.png"
+          srcset="img/logo-header.png 1x, img/logo-header@2x.png 2x"
+          alt="Logo"
+          loading="lazy"
+        />
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link nav-link-brown" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-brown" href="#play">How to Play</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-brown" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-green" href="#reviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-green" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-green" href="#gallery">Gallery</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="btn header-btn" href="" target="_blank">
+        Play on Google Play
+        <svg width="32" height="32" class="icon-burger">
+          <use href="./img/sprite.svg#icon-google-play"></use>
+        </svg>
+      </a>
+
+      <div class="header-burger-wrapper" data-menu-state="close">
+        <button type="button" class="burger-btn" data-action="open">
+          <svg width="40" height="40" class="icon-burger">
+            <use href="./img/sprite.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
+
+        <button type="button" class="btn-close" data-action="close">
+          <svg width="40" height="40" class="icon-burger">
+            <use href="./img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="burger-menu" data-visible="close">
+          <div class="container burger-menu-wrap">
+            <ul class="burger-nav-list">
+              <li class="burger-nav-item">
+                <a class="burger-nav-link nav-link-brown" href="#about" data-menu-link>
+                  About
+                </a>
+              </li>
+              <li class="burger-nav-item">
+                <a class="burger-nav-link nav-link-brown" href="#play" data-menu-link>
+                  How to Play
+                </a>
+              </li>
+              <li class="burger-nav-item">
+                <a class="burger-nav-link nav-link-brown" href="#features" data-menu-link>
+                  Features
+                </a>
+              </li>
+              <li class="burger-nav-item">
+                <a class="burger-nav-link nav-link-green" href="#reviews" data-menu-link>
+                  Reviews
+                </a>
+              </li>
+              <li class="burger-nav-item">
+                <a class="burger-nav-link nav-link-green" href="#faq" data-menu-link>FAQ</a>
+              </li>
+              <li class="burger-nav-item">
+                <a class="burger-nav-link nav-link-green" href="#gallery" data-menu-link>
+                  Gallery
+                </a>
+              </li>
+              <li class="burger-nav-item">
+                <a class="btn burger-btn-market" href="" target="_blank">
+              Play on Google Play
+              <svg width="24" height="24" class="icon-burger">
+                <use href="./img/sprite.svg#icon-google-play"></use>
+              </svg>
+            </a>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
