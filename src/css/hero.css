@@ -63,14 +63,22 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 273px;
-    padding-bottom: 212px;
+    padding-top: 220px;
+    padding-bottom: 263px;
     margin: 0 auto;
     max-width: 1440px;
   }
 
+  @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+    .hero {
+      background-image: url('../img/hero/hero-bg-desc@2x.jpg');
+      background-size: cover;
+      max-width: 1440px;
+    }
+  }
+
   .hero-wrapper {
-    gap: 19px;
+    gap: 20px;
   }
 
   .hero-title {
@@ -94,13 +102,5 @@
   .desc-btn-market {
     display: flex;
     padding: 15px 35px;
-  }
-}
-
-@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
-  .hero {
-    background-image: url('../img/hero/hero-bg-desc@2x.jpg');
-    background-size: cover;
-    max-width: 1440px;
   }
 }
