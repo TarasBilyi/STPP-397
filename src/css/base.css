@@ -5,7 +5,7 @@ html {
 
 body {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.43;
   letter-spacing: 0.02em;
   color: #32302b;
@@ -52,8 +52,22 @@ main:has(.back-link) {
 }
 
 .mobile-btn-market {
-  font-size: 12px;
-  padding: 5px 17px;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.title-green {
+  background: radial-gradient(
+    circle at center,
+    #071f03 0%,
+    #1e6111 53%,
+    #0f3a07 87%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 @media only screen and (min-width: 1440px) {

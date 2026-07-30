@@ -157,6 +157,7 @@
   }
   .reviews-card {
     padding: 10px;
+    transition: transform 0.3s ease;
   }
 
   .reviews-card-top-section {
