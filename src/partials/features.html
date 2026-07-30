@@ -1,9 +1,9 @@
-<section class="features" id="features">
-  <div class="container">
-    <h2 class="features-title">Features</h2>
-    <p class="features-dscr">Systems built for puzzle-and-design lovers</p>
-    <ul class="features-cards">
-      <li class="features-card">
+<section class="features container" id="features">
+  <h2 class="features-title">Features</h2>
+  <p class="features-dscr">Systems built for puzzle-and-design lovers</p>
+  <div class="swiper" data-feature-swiper>
+    <ul class="features-cards swiper-wrapper">
+      <li class="features-card swiper-slide">
         <picture class="features-card-img">
           <source media="(min-width: 1440px)" srcset="
               /img/features/Features_1_d.jpg    1x,
@@ -22,7 +22,7 @@
           </p>
         </div>
       </li>
-      <li class="features-card">
+      <li class="features-card swiper-slide">
         <picture class="features-card-img">
           <source media="(min-width: 1440px)" srcset="
               /img/features/Features_2_d.jpg    1x,
@@ -41,7 +41,7 @@
           </p>
         </div>
       </li>
-      <li class="features-card">
+      <li class="features-card swiper-slide">
         <picture class="features-card-img">
           <source media="(min-width: 1440px)" srcset="
               /img/features/Features_3_d.jpg    1x,
@@ -60,7 +60,7 @@
           </p>
         </div>
       </li>
-      <li class="features-card">
+      <li class="features-card swiper-slide">
         <picture class="features-card-img">
           <source media="(min-width: 1440px)" srcset="
               /img/features/Features_4_d.png    1x,
@@ -73,16 +73,13 @@
           <img src="/img/features/Features_4_d.png" alt="Fetures_4" width="190" height="150" loading="lazy" />
         </picture>
         <div class="features-card-text">
-          <h3 class="features-card-title">
-            Powerful <br class="hidden-dr" />
-            Boosters
-          </h3>
+          <h3 class="features-card-title">Powerful Boosters</h3>
           <p class="features-card-descr">
             Special combinations help clear difficult boards.
           </p>
         </div>
       </li>
-      <li class="features-card">
+      <li class="features-card swiper-slide">
         <picture class="features-card-img">
           <source media="(min-width: 1440px)" srcset="
               /img/features/Features_5_d.png    1x,
@@ -95,10 +92,7 @@
           <img src="/img/features/Features_5_d.png" alt="Fetures_5" width="190" height="150" loading="lazy" />
         </picture>
         <div class="features-card-text">
-          <h3 class="features-card-title">
-            Social <br class="hidden-dr" />
-            Sharing
-          </h3>
+          <h3 class="features-card-title">Social Sharing</h3>
           <p class="features-card-descr">
             Show off your garden progress and visit friends' creations.
           </p>
@@ -106,4 +100,5 @@
       </li>
     </ul>
   </div>
+  <div class="swiper-pagination" data-feature-pagination></div>
 </section>
