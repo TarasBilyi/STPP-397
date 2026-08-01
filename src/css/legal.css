@@ -48,6 +48,11 @@
   margin-bottom: 10px;
 }
 
+.service-text-title {
+  font-family: 'DM Serif Display', sans-serif;
+  font-weight: 400;
+}
+
 .service-text-title,
 .legal-upper-text {
   text-transform: uppercase;
