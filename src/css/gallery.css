@@ -1,6 +1,6 @@
 .gallery {
   padding-top: 30px;
-  padding-bottom: 90px;
+  padding-bottom: 30px;
   border-top: 1px solid #8e7969;
   border-radius: 50px 50px 0 0;
   box-shadow: 0 -7px 15px 0 rgba(0, 0, 0, 0.15);
@@ -43,6 +43,9 @@
   margin: 8px 0 40px;
   background-color: #32302b;
 }
+.gallery .swiper {
+  padding: 0 6px;
+}
 .gallery .swiper-slide {
   border: 1px solid #676767;
   border-radius: 24px;
@@ -74,7 +77,7 @@
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
   .gallery {
-    padding: 100px 76px 200px 76px;
+    padding: 100px 76px 100px 76px;
     border-radius: 100px 100px 0 0;
     margin-top: -100px;
   }
