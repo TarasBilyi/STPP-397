@@ -82,7 +82,8 @@
     line-height: 1.75;
   }
 
-  .legal-text-title {
+  .legal-text-title,
+  .service-text-title {
     font-size: 32px;
     line-height: 1.37;
   }
