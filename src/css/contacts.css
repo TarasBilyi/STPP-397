@@ -5,8 +5,8 @@
   background-size: cover;
   max-width: 375px;
   margin: 0 auto;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  padding-top: 12px;
+  padding-bottom: 28px;
 }
 
 @media screen and (min-width: 320px) and (min-resolution: 192dpi) {
@@ -59,8 +59,8 @@
     background-image: url('../img/contacts/contacts-bg-desc.jpg');
     background-size: cover;
     max-width: 1440px;
-    padding-top: 132px;
-    padding-bottom: 126px;
+    padding-top: 200px;
+    padding-bottom: 318px;
   }
 
   @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {

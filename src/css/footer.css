@@ -1,0 +1,129 @@
+.footer {
+  position: relative;
+  background-color: #233c1e;
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.footer-wave-wrap {
+  position: absolute;
+  top: -37px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 376px;
+  height: 55px;
+  overflow: visible;
+}
+
+.footer-wave {
+  width: 100%;
+  height: 100%;
+  display: block;
+  fill: #233c1e;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo-footer {
+  max-width: 102px;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-nav-link {
+  display: inline-block;
+  padding: 5px;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.copy {
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    max-width: 1440px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+  .footer-wave-wrap {
+    top: -24px;
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  .footer-wave {
+    transform: scaleY(1.8);
+    transform-origin: bottom;
+  }
+
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+  }
+
+  .logo-footer {
+    max-width: 181px;
+  }
+
+  .footer-nav-list {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .footer-nav-items {
+    position: relative;
+  }
+
+  .footer-nav-items:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 16px;
+    background-color: #fff;
+  }
+
+  .footer-nav-link {
+    position: relative;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .footer-nav-link:hover {
+    transform: translateY(-3px);
+  }
+
+  .copy {
+    justify-self: end;
+    width: auto;
+    max-width: 320px;
+    margin: 0;
+    font-size: 20px;
+    text-align: right;
+  }
+}
