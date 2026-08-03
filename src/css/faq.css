@@ -8,6 +8,11 @@
   border-radius: 50px 50px 0 0;
   margin-top: -50px;
 }
+
+.faq-card-wrap {
+  display: block;
+}
+
 .faq-title {
   font-family: 'DM Serif Display', sans-serif;
   font-weight: 400;
@@ -27,6 +32,7 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
 .faq-title::after {
   content: '';
   display: block;
@@ -35,11 +41,13 @@
   margin: 8px 0 40px;
   background-color: #32302b;
 }
+
 .faq-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .faq-card {
   height: 360px;
   background-image: url(/img/faq/answer.png);
@@ -56,6 +64,7 @@
 .faq-icon {
   margin: 0 auto;
 }
+
 .faq-question {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 700;
@@ -64,6 +73,7 @@
   text-align: center;
   color: #000;
 }
+
 .faq-answer {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
@@ -74,18 +84,19 @@
   color: #32302b;
 }
 
-.faq-card:nth-child(2) {
+.faq-card-wrap:nth-child(2) .faq-card {
   transform: translateY(-20px);
 }
-.faq-card:nth-child(3) {
+.faq-card-wrap:nth-child(3) .faq-card {
   transform: translateY(-40px);
 }
-.faq-card:nth-child(4) {
+.faq-card-wrap:nth-child(4) .faq-card {
   transform: translateY(-60px);
 }
-.faq-card:nth-child(5) {
+.faq-card-wrap:nth-child(5) .faq-card {
   transform: translateY(-80px);
 }
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
   .faq {
@@ -94,13 +105,16 @@
     border-radius: 100px 100px 0 0;
     margin-top: -100px;
   }
+
   .faq-title {
     font-size: 44px;
     line-height: 1;
   }
+
   .faq-title::after {
     margin: 8px 0 18px;
   }
+
   .faq-cards {
     display: flex;
     flex-direction: row;
@@ -115,19 +129,19 @@
     text-align: center;
   }
 
-  .faq-card:nth-child(1) {
+  .faq-card-wrap:nth-child(1) .faq-card {
     transform: translateX(0px);
   }
-  .faq-card:nth-child(2) {
+  .faq-card-wrap:nth-child(2) .faq-card {
     transform: translateX(-52px);
   }
-  .faq-card:nth-child(3) {
+  .faq-card-wrap:nth-child(3) .faq-card {
     transform: translateX(-104px);
   }
-  .faq-card:nth-child(4) {
+  .faq-card-wrap:nth-child(4) .faq-card {
     transform: translateX(-156px);
   }
-  .faq-card:nth-child(5) {
+  .faq-card-wrap:nth-child(5) .faq-card {
     transform: translateX(-208px);
   }
 }
