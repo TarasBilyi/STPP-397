@@ -76,6 +76,6 @@ main:has(.back-link) {
   }
 
   .btn:hover {
-    transform: translateY(-3px);
+    transform: scale(1.05);
   }
 }

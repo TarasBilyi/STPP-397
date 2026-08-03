@@ -103,4 +103,32 @@
     display: flex;
     padding: 15px 35px;
   }
+
+  @keyframes btn-pulse {
+    0% {
+      box-shadow:
+        0 5px 15px 0 rgba(35, 68, 30, 0.25),
+        0 0 0 0 rgba(76, 147, 59, 0.5);
+    }
+    70% {
+      box-shadow:
+        0 5px 15px 0 rgba(35, 68, 30, 0.25),
+        0 0 0 15px rgba(76, 147, 59, 0);
+    }
+    100% {
+      box-shadow:
+        0 5px 15px 0 rgba(35, 68, 30, 0.25),
+        0 0 0 0 rgba(76, 147, 59, 0);
+    }
+  }
+
+  .mobile-btn-market,
+  .desc-btn-market {
+    animation: btn-pulse 2.5s ease-out infinite;
+  }
+
+  .mobile-btn-market:hover,
+  .desc-btn-market:hover {
+    animation-play-state: paused;
+  }
 }
