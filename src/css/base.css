@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  overflow-x: hidden;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
   min-height: 100vh;
   margin: 0;
   background-color: #fdf2df;
+  overflow-x: hidden;
 }
 
 body[data-scroll='locked'] {
@@ -24,6 +26,7 @@ body[data-scroll='locked'] {
 main {
   flex-grow: 1;
 }
+
 main:has(.back-link) {
   text-align: center;
 }
